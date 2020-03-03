@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" prefHeight="311.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="planning.app.controller.WinEditDialogController">
+    <children>
+        <HBox prefHeight="31.0" prefWidth="172.0" spacing="10.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Win Name:" />
+                <JFXTextField fx:id="winTitleField" />
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+        <HBox prefHeight="226.0" prefWidth="618.0" spacing="10.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Win Description:" />
+                <JFXTextArea fx:id="winDescriptionField" prefHeight="181.0" prefWidth="476.0" />
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+      <HBox alignment="BOTTOM_RIGHT" layoutX="20.0" layoutY="71.0" prefHeight="226.0" prefWidth="618.0" spacing="10.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <JFXButton onAction="#handleOk" text="Ok" />
+            <JFXButton layoutX="20.0" layoutY="20.0" onAction="#handleCancel" text="Cancel" />
+         </children>
+      </HBox>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</VBox>

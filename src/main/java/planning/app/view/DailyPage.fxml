@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<?import com.calendarfx.view.DetailedDayView?>
+<FlowPane columnHalignment="CENTER" maxHeight="750.0" maxWidth="1600.0" prefHeight="200.0" prefWidth="200.0" rowValignment="TOP" style="-fx-padding: 30;" stylesheets="@css/demo.css,@css/fonts.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="planning.app.controller.DailyPageController">
+   <children>
+      <HBox prefHeight="47.0" prefWidth="1600.0" spacing="15.0">
+         <children>
+            <Text fx:id="dateText" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <JFXDatePicker fx:id="datePicker" onAction="#handleDateChange" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-medium" text="Schedule" textAlignment="CENTER" wrappingWidth="376.72235107421875">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Text>
+             <DetailedDayView fx:id="dayViewSchedule" prefHeight="579.0" prefWidth="800.0" />
+<!--             <Region prefHeight="579.0" prefWidth="800.0" />-->
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <JFXButton onAction="#handleNewActivity" text="New Activity" />
+                  <JFXButton fx:id="editActivityButton" layoutX="16.0" layoutY="10.0" onAction="#handleEditActivity" text="Edit Activity" />
+                  <JFXButton layoutX="129.0" layoutY="10.0" onAction="#handleDeleteActivity" text="Delete" />
+               </children>
+            </HBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-medium" text="Prompt" wrappingWidth="135.22607421875">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Text>
+            <TextFlow lineSpacing="3.0" prefHeight="84.0" prefWidth="780.0">
+               <children>
+                  <Text fx:id="quoteText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="content-section" text="Quote text" wrappingWidth="769.6708984375" />
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextFlow>
+            <HBox prefHeight="36.0" prefWidth="800.0">
+               <children>
+                  <JFXButton onAction="#handleNewQuote" ripplerFill="#b5a5a5" text="New Quote" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="85.0" maxHeight="-Infinity" prefHeight="801.0" prefWidth="800.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-medium" text="Daily Aims" textAlignment="CENTER" wrappingWidth="376.72235107421875">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Text>
+            <TreeView fx:id="aimTree" prefHeight="417.0" prefWidth="800.0" />
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="9.0">
+               <children>
+                  <JFXButton onAction="#handleNewAim" text="New Aim" />
+                  <JFXButton onAction="#handleEditAim" text="Edit Aim" />
+                  <JFXButton layoutX="952.0" layoutY="10.0" onAction="#handleDeleteAim" text="Delete Aim" />
+               </children>
+            </HBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-medium" text="Tasks" />
+            <JFXListView fx:id="taskListView" prefHeight="266.0" prefWidth="800.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton onAction="#handleNewTask" text="New Task" />
+                  <JFXButton fx:id="editTaskButton" layoutX="10.0" layoutY="10.0" onAction="#handleEditEditable" text="Edit Task" />
+                  <JFXButton onAction="#handleDeleteTask" text="Delete Task" />
+               </children>
+            </HBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-medium" text="Wins" textAlignment="CENTER" />
+            <JFXListView fx:id="winListView" prefHeight="218.0" prefWidth="800.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton onAction="#handleNewWin" text="New Win" />
+                  <JFXButton onAction="#handleEditWin" text="Edit Win" />
+                  <JFXButton layoutX="91.0" layoutY="10.0" onAction="#handleDeleteWin" text="Delete Win" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</FlowPane>
