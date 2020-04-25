@@ -22,7 +22,7 @@ This application is written in JavaFX, a GUI library for the Java programming la
 
 ![Persistent Data](gifs/xml_marshal_feature.gif)
 
-## Use of Inheritance Design To Write DRY Code
+## Use of Inheritance To Write DRY, Easily Scalable Code
 
 ![Inheritance](gifs/inheritance.gif)
 
