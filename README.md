@@ -7,6 +7,10 @@ This application is written in JavaFX, a GUI library for the Java programming la
 
 ## Features
 
+
+## MVC Scalable Architecture
+![MVC Structure](gifs/structure.gif)
+
 ## Quote of Day 
 ![Quote of Day Demo](gifs/quote_feature.gif)
 
@@ -17,5 +21,6 @@ This application is written in JavaFX, a GUI library for the Java programming la
 ## Persistent Data and XML Marshalling
 
 ![Persistent Data](gifs/xml_marshal_feature.gif)
+
 
 
