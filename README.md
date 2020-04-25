@@ -14,15 +14,8 @@ This application is written in JavaFX, a GUI library for the Java programming la
 
 ![Daily Schedule](gifs/event_feature.gif)
 
-## Persistent Data and XML Marhsalling
+## Persistent Data and XML Marshalling
 
 ![Persistent Data](gifs/xml_marshal_feature.gif)
 
-## Building
-
-TODO
-
-## Licensing
-
-TODO
 
