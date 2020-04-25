@@ -24,5 +24,6 @@ This application is written using JavaFX, a GUI library for the Java programming
 
 ## Use of Inheritance To Write DRY, Easily Scalable Code
 
+![Inheritance](gifs/inheritance2.gif)
 ![Inheritance](gifs/inheritance.gif)
 
