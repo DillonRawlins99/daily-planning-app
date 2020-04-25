@@ -7,7 +7,16 @@ This application is written in JavaFX, a GUI library for the Java programming la
 
 ## Features
 
-TODO
+## Quote of Day 
+![Quote of Day Demo](gifs/quote_feature.gif)
+
+## Event Scheduling
+
+![Daily Schedule](gifs/event_feature.gif)
+
+## Persistent Data and XML Marhsalling
+
+![Persistent Data](gifs/xml_marshal_feature.gif)
 
 ## Building
 
