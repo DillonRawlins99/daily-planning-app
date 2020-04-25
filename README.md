@@ -5,7 +5,7 @@ design pattern.
 
 This application is written in JavaFX, a GUI library for the Java programming language.
 
-## Features
+## Design and Features
 
 
 ## MVC Scalable Architecture
@@ -22,5 +22,7 @@ This application is written in JavaFX, a GUI library for the Java programming la
 
 ![Persistent Data](gifs/xml_marshal_feature.gif)
 
+## Use of Inheritance Design To Write DRY Code
 
+![Inheritance](gifs/inheritance.gif)
 
