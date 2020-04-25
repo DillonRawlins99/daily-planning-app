@@ -1,6 +1,7 @@
 # Daily Planning App
 
-This app was designed with the intent of learning GUI application programming, the development of larger scale applications with bigger code bases, and the Model View Controller
+This app was designed with the intent of learning GUI application programming, the development of larger scale applications with larger code bases (roughly 1850 LOC as of 4/25/20), and the Model View Controller
+
 design pattern.
 
 This application is written using JavaFX, a GUI library for the Java programming language.
